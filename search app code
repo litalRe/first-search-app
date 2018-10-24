@@ -1,0 +1,8 @@
+var fs = require('fs');
+fs.readdir(".",['Lital'],(err, File)=> {
+if (err) {
+    console.log ('There is no Lital in the files');
+}else{
+    console.log(files);
+}
+})
