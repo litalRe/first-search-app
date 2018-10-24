@@ -1,8 +1,26 @@
+function search(USAGE) {
+    console.log(' USAGE: '+USAGE )
+}
+
+search('node search [EXT] [TEX]');
+
+
+
 var fs = require('fs');
-fs.readdir(".",['Lital'],(err, File)=> {
+fs.readdir(".",function (err, file) {
 if (err) {
-    console.log ('There is no Lital in the files');
+    console.log ('No file was found');
 }else{
-    console.log(files);
+    console.log(__filename);
 }
 })
+
+
+
+fs.readFile(".",function (err, data) {
+    if (err) {
+        console.log ('No file was found');
+    }else{
+        console.log (data)
+    }
+}) 
